@@ -1,0 +1,197 @@
+/////********* MIO CON MIS APUNTES
+
+/// si no existe mongo lo crea
+use("db1")
+db.universidades.insertOne(
+    {
+        nombre: "UNI",
+        carreras: ["Ingenieria Mecanica" , "Ingenieria Electrica", "Ingenieria Industrial"],
+        alumnos: 5000,
+        direccion: {// la direccion como es compleja lo ponemos dentro de otro JSON
+            calle: "Av. Aviacion",
+            numero: 203,
+            distrito: "Rimac",
+            ciudad: "Lima"
+        },
+        presupuesto: 1000000
+    }
+)
+
+// usare este create cuando ya tenga reglas, cuantos campos, de que tipos
+db.createCollection("universidades",
+{
+
+}
+)
+
+
+
+use("db1") // se declara para ejecutarla 
+db.universidades.find()
+
+
+use("db1")
+db.universidades.insertMany(
+    {
+        nombre: "UNI",
+        carreras: ["Ingenieria Mecanica" , "Derecho", "Psicologia"],
+        alumnos: 13000,
+        direccion: {// la direccion como es compleja lo ponemos dentro de otro JSON
+            calle: "Av. Arequipa",
+            numero: 203,
+            distrito: "Surco",
+            ciudad: "Lima"
+        },
+        presupuesto: 1000000
+    },
+    {
+        nombre: "PUCP",
+        carreras: ["Ingenieria Mecanica" , "Derecho", "Psicologia"],
+        alumnos: 8000,
+        direccion: {// la direccion como es compleja lo ponemos dentro de otro JSON
+            calle: "Av. Univeritaria",
+            numero: 678,
+            distrito: "Cercado",
+            ciudad: "Lima"
+        },
+        presupuesto: 1000000
+    },
+    {
+        nombre: "UNSA",
+        carreras: ["Ingenieria Mecanica" , "Ing Electrica", "Relaciones Industriales"],
+        alumnos: 9000,
+        direccion: {// la direccion como es compleja lo ponemos dentro de otro JSON
+            calle: "Av. Independencia",
+            numero: 203,
+            distrito: "Surco",
+            ciudad: "Lima"
+        },
+        presupuesto: 1000000
+    },
+)
+
+
+/////********* copia del proefe DE REPOSITORIO
+
+use("db1")
+db.universidades.insertOne(
+    {
+        nombre: "UNI",
+        carreras: ["Ing Mecanica", "Ing Electrica", "Ing Industrial"],
+        alumnos: 5000,
+        direccion: {
+            calle: "Av Aviacion",
+            numero: 203,
+            distrito: "Rimac",
+            ciudad: "Lima"
+        },
+        presupuesto: 1000000 
+    }
+)
+
+use("db1")
+db.universidades.find()
+
+//********** */
+
+use("db1")
+db.universidades.insertMany(
+    [
+        {
+            nombre: "UNMSM",
+            carreras: ["Ing Mecanica", "Derecho", "Psicologia"],
+            alumnos: 13000,
+            direccion: {
+                calle: "Av Arequipa",
+                numero: 789,
+                distrito: "Surco",
+                ciudad: "Lima"
+            },
+            presupuesto: 1500000 
+        },
+        {
+            nombre: "PUCP",
+            carreras: ["Ing Mecanica", "Derecho", "Artes"],
+            alumnos: 8000,
+            direccion: {
+                calle: "Av Univesitaria",
+                numero: 678,
+                distrito: "Cercado",
+                ciudad: "Lima"
+            },
+            presupuesto: 2000000 
+        },
+        {
+            nombre: "UNSA",
+            carreras: ["Ing Mecanica", "Ing Electrica", "Relaciones Industriales"],
+            alumnos: 9000,
+            direccion: {
+                calle: "Av Independencia",
+                numero: 399,
+                distrito: "Arequipa",
+                ciudad: "Arequipa"
+            },
+            presupuesto: 1500000
+        }
+    ]
+)
+
+
+
+/// unset para eliminar un campo
+
+
+use("db1")
+db.universidades.updateMany(
+    {
+        alumnos:
+        {
+            $lte: 8000
+        }
+    },
+    {
+        $unset:
+        {
+            performance:0
+        }
+    }
+)
+
+
+use("db1")
+db.universidades.find()
+
+
+
+use("db1")
+db.universidades.find(
+    {
+        "direccion.ciudad": "Lima"
+    },
+    {
+        nombre: true
+    }
+)
+
+
+///************ */
+/// operador rename 
+use("db1")
+db.universidades.updateMany(
+    {
+
+    },
+    {
+        $rename:
+        {
+            direccion: "ubicacion"
+        }
+    }
+)
+
+use("db1")
+db.universidades.find()
+
+
+
+

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37879f81-757c-4c8a-812b-5a4eaaefd60d" name="Changes" comment="git commit -m &quot;first commit tarea semana 1 javag3&quot;">
+      <change afterPath="$PROJECT_DIR$/src/SolucionEjerciciolunes18/ejercicio3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SolucionEjerciciolunes18/ejercicio5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/condicionales/ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/condicionales/ejercicio4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solucion_ejercicio_lunes18_12/Ejercicio1RadioCirculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SolucionEjerciciolunes18/Ejercicio1RadioCirculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solucion_ejercicio_lunes18_12/ejercicio2Temperaratura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SolucionEjerciciolunes18/ejercicio2Temperaratura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solucion_ejercicio_lunes18_12/ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SolucionEjerciciolunes18/ejercicio4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/condicionales/EjemploCond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/condicionales/EjemploCond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/condicionales/Ejercicio6Cond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/condicionales/Ejercicio6Cond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/condicionales/ejercicio3.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2ZpSq8IFvIp4EPeIbrI8JxYURu6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ArrayEjemplo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejemplo2Arrays.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.EjemploCond.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EjemploLoops.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio1RadioCirculo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio2Loops.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio3Volumen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio3VolumenEsfera.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio3_3Loops.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio3_4Loops.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Ejercicio3_loops.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio5Cond.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio6Cond.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EjercicioLoops3_1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio_3_1_Metodo_1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio_3_1_Metodo_2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LoopsEjercicio8.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RecorriendoArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrEjemplos.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.VerificarAnioBisiesto.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ejercicio1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ejercicio2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ejercicio2Temperaratura.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ejercicio3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ejercicio4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ejercicio5.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/melvi/IdeaProjects/miercoles/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-97de7592" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37879f81-757c-4c8a-812b-5a4eaaefd60d" name="Changes" comment="" />
+      <created>1703117723393</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703117723393</updated>
+    </task>
+    <task id="LOCAL-00001" summary="git commit -m &quot;first commit javag3&quot;">
+      <option name="closed" value="true" />
+      <created>1703821616016</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703821616016</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git commit -m &quot;first commit tarea semana 1 javag3&quot;">
+      <option name="closed" value="true" />
+      <created>1703821702960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703821702960</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git commit -m &quot;first commit tarea semana 1 javag3&quot;">
+      <option name="closed" value="true" />
+      <created>1703821845039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703821845039</updated>
+    </task>
+    <task id="LOCAL-00004" summary="git commit -m &quot;first commit tarea semana 1 javag3&quot;">
+      <option name="closed" value="true" />
+      <created>1703822836042</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703822836042</updated>
+    </task>
+    <task id="LOCAL-00005" summary="git commit -m &quot;first commit tarea semana 1 javag3&quot;">
+      <option name="closed" value="true" />
+      <created>1703823419589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703823419589</updated>
+    </task>
+    <task id="LOCAL-00006" summary="git commit -m &quot;first commit tarea semana 1 javag3&quot;">
+      <option name="closed" value="true" />
+      <created>1703824821001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703824821001</updated>
+    </task>
+    <task id="LOCAL-00007" summary="git commit -m &quot;first commit tarea semana 1 javag3&quot;">
+      <option name="closed" value="true" />
+      <created>1703825462107</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703825462107</updated>
+    </task>
+    <task id="LOCAL-00008" summary="git commit -m &quot;first commit tarea semana 1 javag3&quot;">
+      <option name="closed" value="true" />
+      <created>1704148983011</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704148983013</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git commit -m &quot;first commit javag3&quot;" />
+    <MESSAGE value="git commit -m &quot;first commit tarea semana 1 javag3&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="git commit -m &quot;first commit tarea semana 1 javag3&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/bucles/Ejercicio3_4Loops.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Semana1Viernes/StrEjemplos.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Semana1Viernes/RecorriendoArray.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Semana1Viernes/Ejemplo2Arrays.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

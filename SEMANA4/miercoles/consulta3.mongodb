@@ -1,0 +1,123 @@
+use("db1")
+/// busqueda de campos mas GENERALES
+
+// $ lte
+
+db.universidades.find(
+    {
+        alumnos: {/// los campos que sean menores
+            $lt: 9000
+        }
+    },
+    {
+        nombre: true,
+        alumnos: true
+    }
+)
+
+
+
+use("db1")
+/// busqueda de campos mas especificos nombre, presupuesto
+// 
+// $ lte
+
+db.universidades.find(
+    {
+        presupuesto: {/// 
+            $gte: 1000000,//gte= greater than equal- la (,)coma seria un and, y
+            $lte: 1500000//lte= least than equal-
+        }
+    },
+    {
+        nombre: true,
+        presupuesto: true
+    }
+)
+
+
+/// usando el OR(O) 
+/// trae los presupuestos que sean mayor que 200000  o alumnos sea
+// menor a 9000
+db.universidades.find(
+    {
+        $or: [
+            {
+                presupuesto:
+                {
+                    $gt: 200000
+                },
+                alumnos:
+                {
+                    $lt: 9000
+                }
+            }
+        ]
+    }
+)
+
+
+/// operador de incremento inc
+// actualiza un campo numerico
+/// de los campos que cumplan con el filtro
+
+use("db1")
+db.universidades.updateMany(
+    {
+        alumnos:{
+            $gte: 10000
+        }
+    },
+    /// actualizacion
+    {
+        $inc:{
+            presupuesto: 500000
+        }
+    }
+)
+
+/// para consultar y verificar los cambios
+use("db1")
+db.universidades.find()
+
+
+
+//// operador set para fijar un valor 
+/// para cambiar el valor de un atributo 
+
+use("db1")
+db.universidades.updateMany(
+    {
+        alumnos:
+        {
+            $gt: 9000
+        }
+    },
+    {
+        $set:
+        {
+            presupuesto: 500000
+        }
+    }
+)
+
+
+use("db1")
+db.universidades.find()
+
+
+use("db1")
+db.universidades.updateMany(
+    {
+        /// cuando aqui va vacio se refiere a todos los campos
+    },
+    {
+        $set:
+        {
+            profesores: 45
+        }
+    }
+)
+
+use("db1")
+db.universidades.find()

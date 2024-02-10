@@ -1,0 +1,51 @@
+// crear base de datos
+
+use("db1")
+
+db.createCollection("users")// db1 es la base de datos,users es la coleccion
+
+/// insertando datos
+
+use("db1") // se declara para ejecutarla 
+db.users.insertOne(
+    {
+        "nombre": "George",
+        "apellido": "Maxi",
+        "edad": 27
+    }
+)
+
+
+use("db1") // se declara para ejecutarla 
+db.users.insertMany(  /// este es un array en JSON
+    [
+        {
+            "nombre": "Jose",
+            "apellido": "Chavez",
+            "edad": 26
+        },
+        {
+            "nombre": "Rafael",
+            "apellido": "David",
+            "edad": 26,
+            "correo": "rarael@gmail.com"
+        }
+    ]
+)
+// calgo como un selec sin  parametros
+use("db1") // se declara para ejecutarla 
+db.users.find()
+
+
+use("db1") // se declara para ejecutarla 
+db.users.find(
+    //este espacio vacio es filtro 
+    {
+
+    },
+    {
+        nombre: true,
+        apellido: true
+
+    }
+)

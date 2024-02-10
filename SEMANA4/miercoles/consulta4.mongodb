@@ -1,0 +1,180 @@
+///  como definir un esquema
+/// primero se coloca en la tabla donde trabajamos
+/// byson = un tipo de dato para mongodb, es como una transcripcion a mongo
+use("db1")
+db.createCollection("usuarios",
+    {
+        validator:{
+            $jsonSchema:{
+                bsonType: 'object',
+                /*required:*/
+                //// a partir de aqui colocamos los atributos
+                properties:{  
+                    nombre: { ///  defino el producto
+                        bsonType: 'string'/// que tipo de dato es
+                    },
+                    password:{///  defino el producto
+                        bsonType: 'string'/// que tipo de dato es
+                    },
+                    productos:{ ///  como sera  un array 
+                        bsonType: 'array', /// que tipos de datos tendra mis productos como nombre, precio
+                        items: { //lo que almacenara son items,  pero es un subdocumento lo llamamos object
+                            bsonType: 'object', /// object hace feferencia a documentos
+                            properties:{
+                                nombre_producto:{/// defino el nombre
+                                    bsonType:'string'// que tipo de dato es
+                                },
+                                precio:{/// defino el nombre
+                                    bsonType: 'double'// que tipo de dato es
+                                },
+                                cantidad:{/// defino el nombre
+                                    bsonType: 'int'// que tipo de dato es
+                                },
+                                comentarios:{/// defino el nombre
+                                    bsonType: 'array',// que tipo de dato es
+                                    items:{ ///  se dice que lo que contiene mi array
+                                        bsonType:'objectId' /// Id de los comentarios // que tipo de dato es
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    direcciones:{/// defino el nombre
+                        bsonType:'array',//almacenara una lista de direccioes// que tipo de dato es
+                        items:
+                        {
+                            bsonType: 'objectId',// que tipo de dato es
+                        }
+                    }
+                }
+            }
+        }
+    }
+)
+
+
+
+
+use("db1")
+db.createCollection("comentarios",
+{
+    validator:{
+        $jsonSchema:{
+            bsonType:'object',
+            properties:
+            {
+                contenido:{
+                    bsonType: 'string'
+                }
+            }
+        }
+    }
+})
+
+use("db1")
+db.createCollection("productos",
+{
+    validator:{
+        $jsonSchema:
+        {
+            bsonType: 'object',
+            properties:
+            {
+                nombre_producto:{
+                    bsonType: 'string'
+                },
+                precio:{
+                    bsonType: 'double'
+                },
+                comentarios:
+                {
+                    bsonType: 'array',
+                    items :{
+                        bsonType: 'objectId'
+                    }
+                }
+            }
+        }
+    }
+})
+use("db1")
+db.productos.createIndex({nombre_producto:1}, {unique: true})
+use("db1")
+db.createCollection("direcciones",
+{
+    validator:{
+        $jsonSchema:
+        {
+            bsonType:'object',
+            properties:
+            {
+                calle:{
+                    bsonType:'string'
+                },
+                n_departamento:
+                {
+                    bsonType: 'string'
+                },
+                distrito:
+                {
+                    bsonType: 'string'
+                },
+                ciudad:{
+                    bsonType:'string'
+                }
+            }
+        }
+    }
+})
+
+use("db1")
+db.createCollection("direcciones",
+{
+    validator:{
+        $jsonSchema:
+        {
+            bsonType: 'object',
+            properties:
+            {
+                calle:{
+                    bsonType:'string'
+                },
+                n_departamento:
+                {
+                    bsonType:'string'
+                },
+                distrito:
+                {
+                    bsonType:'string'
+                },
+                ciudad:{
+                    bsonType:'string'
+                }
+            }
+        }
+    }
+})
+
+
+use("db1")
+db.comentarios.insertOne(
+    {
+        contenido:"Muy buen producto"
+    }
+)
+
+// error
+db.comentarios.insertOne(
+    {
+        contenido:1
+    }
+)
+
+use("db1")
+db.productos.insertOne(
+    {
+        nombre_producto: "Latop HP",
+        precio: 1999.99,
+        comentarios:[ObjectId("65af279af3f5b6a31d69f8d0")]
+    }
+)
